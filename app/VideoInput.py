@@ -5,7 +5,7 @@ import app.CNN as cnn
 import app.ConfusionMatrix as cm
 import playsound
 import app.Utils as utils
-import Queue as queue
+import queue
 from threading import Thread
 
 def beep_function():

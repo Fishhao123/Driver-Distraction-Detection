@@ -20,7 +20,8 @@ class Start():
 
     def loadModel(self):
         cnn_algo = cnn.ConvolutionalNeuralNetwork()
-        cnn_model = cnn_algo.create_model(self.training_data)
+        cnn_model = cnn_algo.load_current_model()
+        # cnn_model = cnn_algo.create_model(self.training_data)
         print("Model Loaded ! .......................................................")
         return cnn_model
 

@@ -71,6 +71,16 @@ class ConvolutionalNeuralNetwork():
 
 		return model
 
+	def load_current_model(self):
+
+		convnet = self.tflearn_definition()
+		model = tflearn.DNN(convnet, tensorboard_dir='./models/log', tensorboard_verbose=0)
+
+		if os.path.isfile("./models/cnn.model.meta"):
+			model.load('./models/cnn.model')
+
+		return model
+
 
 		
 		

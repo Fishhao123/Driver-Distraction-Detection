@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import app.CNN as cnn
 import app.Utils as utils
-import Queue as queue
+import queue
 import playsound
 from threading import Thread
 

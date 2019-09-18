@@ -5,7 +5,7 @@ import seaborn as sn
 import pandas as pd
 from pylab import savefig
 
-def confusion_matrix_fn( model):
+def confusion_matrix_fn(model):
     train_data_npy = np.load(utils.TRAIN_DATA_COLOR_NPY, encoding="latin1")
     test_data = train_data_npy[-1000:]
     total = 0

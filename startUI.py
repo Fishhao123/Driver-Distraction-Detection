@@ -16,9 +16,9 @@ class App(QWidget):
         self.height = 700
 
         self.strt = start.Start()
-        self.training_datasets = self.strt.loadDataSets()
+        # self.training_datasets = self.strt.loadDataSets()
         self.cnn_model = self.strt.loadModel()
-        self.con_matrix = self.strt.confusionMatrix(self.cnn_model)
+        # self.con_matrix = self.strt.confusionMatrix(self.cnn_model)
 
         self.initUI()
         
